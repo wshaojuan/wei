@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+html{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+body{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+.wrapper{
+    position: relative;
+    width: 600px;
+    margin: 50px auto 0;
+    /* background: #ccc; */
+}
+.main{
+    width: 100%;
+    text-align: center;
+}
+.main img{
+   width: 200px;
+   height: 200px;
+   border: 50px solid #444;
+   border-radius: 50%;
+   transform: rotate(0deg);
+   transition: transform  0.3s;
+}
+.tool {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.btn1{
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+}
+.btn2{
+    display: inline-block;
+    position: absolute;
+    left: 55px;
+    width: 30px;
+    height: 30px;  
+}
+.btn3{
+    display: inline-block;
+    position: absolute;
+    left: 90px;
+    width: 30px;
+    height: 30px;
+}
+.tool i {
+    color: #fff;
+    font-size: 30px;
+}
+.volume {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 30px;
+}
+.tool>div {
+    top:50%;
+    margin-top: -15px;
+}
+.progress {
+    position: absolute;
+    left: 50%;
+    margin-left: -180px;
+    width: 400px;
+    height: 30px;
+    /* background: red; */
+}
+.current-time, .all-time{
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    font-weight: 200;
+}
+.current-time{
+    float: left;
+}
+.all-time{
+    float: right;
+}
+.pro-box{
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    display: inline-block;
+    width: 240px;
+    height: 30px;
+}
+.pro-bg{
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.pro-active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 2px;
+    background: #fff;
+}
+.radio-box{
+    position: absolute;
+    right:-6px;
+    top: -9px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    /* background: red; */
+}
+.radio{
+    position: absolute; 
+    /* right: 0;
+    top: -3px; */ 
+    left: 50%;
+    top: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.hover{
+    position: absolute;
+    right: -30px;
+    height: 130px;
+    width: 160px;
+    margin-top: -120px;
+    /* border: 2px solid red; */
+}
+.hover:hover .vol{
+    right: -20px;  
+}
+.vol{
+    position: absolute;
+    width: 180px;
+    height: 30px;
+    right: 9999px;
+    /* 隐藏喇叭 */
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+.vol .vol-volume{
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+}
+.vol .vol-volume .iconfont{
+    font-size: 30px;
+    color: #fff;
+}
+.vol-box{
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+    width: 140px;
+    height: 20px;
+    /* background: rgba(0, 0, 0, 0.3);  */
+    border-radius: 3px;
+}
+.vol-bg{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    /* left: 9px; */
+    background: rgba(0, 0, 0, 0.5);
+}
+.vol-active{
+    position: absolute;
+    width: 34px;
+    height: 2px;
+    top: 9px;
+    background: #fff;
+}
+.radio-box1{
+    position: absolute;
+    right:-12px;
+    top: -9px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.vol-radio{
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -8px;
+    width: 8px;
+    height: 16px;
+    background: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
