@@ -1,0 +1,132 @@
+body,ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+background: rgba(0, 0, 0, 0.5);
+}
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -200px;
+    width: 500px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.main {
+    width: 500px;
+    height: 400px;
+}
+.main img {
+    width: 100%;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.content span {
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: left 0.3s;
+    /* 让两个城市互换可以快一些，飞起来 */
+}
+
+/* 由于有两个都是before类，上海是第一个，用first-child，北京是第二个，用last-child */
+.before:first-child {
+    left: 0;
+}
+.before:last-child{
+    left: 300px;
+}
+.after:first-child {
+    left: 300px;
+}
+.after:last-child {
+    left: 0;
+}
+.change {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../image/change.png');
+    /* 一个X轴方向，一个Y轴方向 */
+    background-size: 90% 90%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(0deg);
+    transition: transform  0.3s;
+    z-index: 10;
+}
+.card {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    transition: left 0.3s;
+    z-index: 100;
+}
+.card .cancle {
+    display: inline-block;
+    margin: 20px 0 0 30px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ccc;
+
+}
+.card .cancle:hover {
+    color: #fff;
+    background: orange;
+}
+.hot-cities {
+    width: 100%;
+}
+header {
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+}
+.cities {
+    width: 90%;
+    margin: 0 auto;
+}
+.cities li {
+    display: inline-block;
+    width: 15%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 8px;
+    cursor: pointer;
+}
+.cities li:hover{
+    background:gray;
+    color: #fff;
+}
