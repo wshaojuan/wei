@@ -2,9 +2,537 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>蝉壳欢迎你</title>
+    <title>韦少娟的个人主页</title>
+    <link rel="stylesheet" href="./css/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <h2>蝉壳欢迎你</h2>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+      
+        
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li id="nav-shouye"><a href="#">首页</a></li>
+               
+           
+                <!-- 第一个下拉 -->
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">      HTML5项目      <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                        <li><a href="#">个性化音乐播放器</a></li>
+                        <li><a href="#">SVG动画</a></li>
+                        <li><a href="#">刮刮乐</a></li>
+                        <li><a href="#">拖拽文件实现上传</a></li>
+                       
+                </ul>
+                </li>
+           <!-- 第二个下拉 -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">     CSS3项目      <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="#">CSS3选项卡</a></li>
+                    <li><a href="#">3D酷炫动画</a></li>
+                    <li><a href="#">Banner广告切换</a></li>
+                    <li><a href="#">响应式布局网站</a></li>
+                    <li><a href="#">CSS3时钟</a></li>
+                    </ul>
+                </li>
+
+                <!-- 第3个下拉 -->
+                <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  javascript项目  <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="#">小米商城</a></li>
+                        <li><a href="#">原生js实现轮播图</a></li>
+                        <li><a href="#">网上订票系统</a></li>
+                        <li><a href="#">淘宝放大镜</a></li>
+                        
+                        </ul>
+                </li>
+
+                 <!-- 第4个下拉 -->
+
+                 <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  主流框架项目  <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a href="#">jquery-淘宝购物车数量增减</a></li>
+                        <li><a href="#">jquery-淘宝轮播图</a></li>
+                        <li><a href="#">jquery-手机相册</a></li>
+                        <li><a href="#">vue-音乐播放器</a></li>
+                        <li><a href="#">vue</a></li>
+                        </ul>
+                 </li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">GitHup</a></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">    与我联系   <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">邮箱 1731327638@qq.com</a></li>
+                  <li><a href="#">微信 WYB567</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="jumbotron">
+        <h2>欢迎访问我的个人主页！</h2>
+        <p>追求卓越，超越自我。</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">查看项目源码</a></p>
+   </div>
+
+   <!-- 轮播图 -->
+   <div class="project-header page-header">
+      <h3 id="item-list">个人专栏</h3>
+  </div>
+  
+   <div class="lb-wrapper">
+      <ul class="lb-img-box">
+          <li><a href="javascript:;"><img src="./imgs/lb1.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="./img/2.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="./img/3.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="./img/4.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="./img/5.jpg" alt=""></a></li>
+          <li><a href="javascript:;"><img src="./imgs/lb1.jpg" alt=""></a></li>
+
+      </ul>
+      <div class="lb-btn">
+          <a href="javascript:;" class="prevBtn">&lt;</a>
+          <a href="javascript:;" class="nextBtn">&gt;</a>
+      </div>
+      <div class="lb-order">
+          <ul>
+              <li class="lb-item active"></li>
+              <li class="lb-item"></li>
+              <li class="lb-item"></li>
+              <li class="lb-item"></li>
+              <li class="lb-item"></li>
+          </ul>
+      </div>
+  </div>
+
+<!-- h5板块 -->
+   <div class="container projects">
+        <div class="project-header page-header">
+            <h3 id="item-list">HTML5项目</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <a href="" class="lazy">
+                        <img src="./imgs/player.jpg" alt="..." width="300px" height="150px">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="javascript:;" title="React">个性化音乐播放器
+                            <br><small>H5+CSS3+JavaScript</small></a>
+                        </h3>
+                        <p>音乐播放时，可以进行上一首，下一首歌的切换、音量大小的调节、进度条的自由拖拽等功能。</p>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <a href="" class="lazy">
+                    <img src="./imgs/svg.png" alt="..." width="300px" height="150px">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="javascript:;" title="React">SVG动画
+                        <br><small>利用SVG动画的知识，做出有动画效果的demo</small></a>
+                    </h3>
+                    <p>通过改变xy轴方向</p>  
+                </div>
+            </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <a href="" class="lazy">
+                    <img src="./imgs/1.jpg" alt="..." width="300px" height="150px">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="javascript:;" title="React">刮刮乐
+                        <br><small>用于构建用户界面的 JavaScript 框架</small></a>
+                    </h3>
+                    <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>  
+                </div>
+            </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <a href="" class="lazy">
+                    <img src="./imgs/tz.png" alt="..." width="300px" height="150px">
+                </a>
+                <div class="caption">
+                    <h3>
+                        <a href="javascript:;" title="React">拖拽文件上传
+                        <br><small>用于构建用户界面的 JavaScript 框架</small></a>
+                    </h3>
+                    <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>  
+                </div>
+            </div>
+            </div>
+
+        </div>
+   </div>
+
+<!-- css3板块 -->
+  <div class="container projects">
+  <div class="project-header page-header">
+        <h3 id="item-list">CSS3项目</h3>
+    </div>
+    
+
+    <div class="row">
+
+
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+          <a href="" class="lazy">
+              <img src="./imgs/xx.png" alt="..." width="300px" height="150px">
+          </a>
+          <div class="caption">
+              <h3>
+                  <a href="javascript:;" title="React">CSS3选项卡
+                  <br><small>用于构建用户界面的 JavaScript 框架</small></a>
+              </h3>
+              <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>  
+          </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="thumbnail">
+        <a href="" class="lazy">
+            <img src="./imgs/3d.png" alt="..." width="300px" height="150px">
+        </a>
+        <div class="caption">
+            <h3>
+                <a href="javascript:;" title="React">3D酷炫动画
+                <br><small>用于构建用户界面的 JavaScript 框架</small></a>
+            </h3>
+            <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>  
+        </div>
+    </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+          <a href="" class="lazy">
+              <img src="./imgs/xy.png" alt="..." width="300px" height="150px">
+          </a>
+          <div class="caption">
+              <h3>
+                  <a href="javascript:;" title="React">响应式布局网站
+                  <br><small>用于构建用户界面的 JavaScript 框架</small></a>
+              </h3>
+              <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>  
+          </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+          <a href="" class="lazy">
+              <img src="./imgs/clock.png" alt="..." width="300px" height="150px">
+          </a>
+          <div class="caption">
+              <h3>
+                  <a href="javascript:;" title="React">CSS3时钟
+                  <br><small>用于构建用户界面的 JavaScript 框架</small></a>
+              </h3>
+              <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>  
+          </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+          <a href="" class="lazy">
+              <img src="./imgs/bn.jpg" alt="..." width="300px" height="150px">
+          </a>
+          <div class="caption">
+              <h3>
+                  <a href="javascript:;" title="React"> Banner广告切换
+                  <br><small>用于构建用户界面的 JavaScript 框架</small></a>
+              </h3>
+              <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>  
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  
+
+  
+  <!-- js板块 -->
+  <div class="container projects">
+      <div class="project-header page-header">
+            <h3 id="item-list">javascript项目</h3>
+        </div>
+        
+    
+        <div class="row">
+    
+    
+    
+      
+        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="thumbnail">
+            <a href="" class="lazy">
+                <img src="./imgs/xiaomi.png" alt="..." width="300px" height="150px">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="javascript:;" title="React">小米闪购-小米商城
+                    <br><small>初学时候的练习</small></a>
+                </h3>
+                <p>模仿原网站的功能，初步完成首页的效果</p>  
+            </div>
+        </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="thumbnail">
+              <a href="" class="lazy">
+                  <img src="./imgs/lbt.jpg" alt="..." width="300px" height="150px">
+              </a>
+              <div class="caption">
+                  <h3>
+                      <a href="javascript:;" title="React">原生js实现轮播图
+                      <br><small>用于构建用户界面的 JavaScript 框架</small></a>
+                  </h3>
+                  <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>  
+              </div>
+          </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="thumbnail">
+              <a href="" class="lazy">
+                  <img src="./imgs/dp.png" alt="..." width="300px" height="150px">
+              </a>
+              <div class="caption">
+                  <h3>
+                      <a href="javascript:;" title="React">网上订票系统
+                      <br><small>用于构建用户界面的 JavaScript 框架</small></a>
+                  </h3>
+                  <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>  
+              </div>
+          </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="thumbnail">
+              <a href="" class="lazy">
+                  <img src="./imgs/fd.jpg" alt="..." width="300px" height="150px">
+              </a>
+              <div class="caption">
+                  <h3>
+                      <a href="javascript:;" title="React">淘宝放大镜
+                      <br><small>用于构建用户界面的 JavaScript 框架</small></a>
+                  </h3>
+                  <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>  
+              </div>
+          </div>
+        </div>
+    
+      </div>
+    
+  </div>
+
+   <!-- 框架板块 -->
+   <div class="container projects">
+      <div class="project-header page-header">
+            <h3 id="item-list">主流框架项目</h3>
+        </div>
+        
+    
+        <div class="row">
+    
+    
+    
+      
+        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="thumbnail">
+            <a href="" class="lazy">
+                <img src="./imgs/jj.jpg" alt="..." width="300px" height="150px">
+            </a>
+            <div class="caption">
+                <h3>
+                    <a href="javascript:;" title="React">jQuery淘宝购物车商品数量增减
+                    <br><small>jQuery操作输入按钮</small></a>
+                </h3>
+                <p>商品数量1-20增减，不能比1小，比20大，样式实现。</p>  
+            </div>
+        </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="thumbnail">
+              <a href="" class="lazy">
+                  <img src="./imgs/lbt.jpg" alt="..." width="300px" height="150px">
+              </a>
+              <div class="caption">
+                  <h3>
+                      <a href="javascript:;" title="React">jQuery淘宝轮播图
+                      <br><small>基于jQuery的轮播图，操作DOM更加便捷</small></a>
+                  </h3>
+                  <p>自动轮播，上下翻页</p>  
+              </div>
+          </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="thumbnail">
+              <a href="" class="lazy">
+                  <img src="./imgs/sj.jpg" alt="..." width="300px" height="150px">
+              </a>
+              <div class="caption">
+                  <h3>
+                      <a href="javascript:;" title="React">jQuery手机相册
+                      <br><small>利用了zepto这个简便的jQuery框架</small></a>
+                  </h3>
+                  <p>移动端的相册，点击放大，上下翻页</p>  
+              </div>
+          </div>
+        </div>
+    
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="thumbnail">
+              <a href="" class="lazy">
+                  <img src="./img/4.png" alt="..." width="300px" height="150px">
+              </a>
+              <div class="caption">
+                  <h3>
+                      <a href="javascript:;" title="React">React
+                      <br><small>用于构建用户界面的 JavaScript 框架</small></a>
+                  </h3>
+                  <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>  
+              </div>
+          </div>
+        </div>
+    
+      </div>
+    
+  </div>
+
+  <!-- 弹幕 -->
+  <div class="project-header page-header">
+        <h3 id="item-list">视频观看，欢迎发送弹幕！</h3>
+    </div>
+
+    <div class="dm-equipment">
+            <div class="dm-wrapper">
+                <div class="dm-main">
+                   <video src="./弹幕.mp4" controls></video>
+                   <!-- <span>哈哈哈</span> -->
+                </div>
+                <div class="dm-send">
+                    <input type="text" class="dm-input" placeholder="请输入弹幕"><div class="dm-btn">发送</div>
+                </div>
+        </div>
+    
+        </div>
+
+  <footer class="footer">
+      <div class="container">
+          <div class="row footer-top">
+              <div class="col-lg-6 col-md-6">
+                  <h4>
+                      <img src="./img/logo.png" alt="">
+                  </h4>
+                      <p>我们一直致力于为广大开发者提供更多的优质技术文档和辅助开发工具！</p>
+                  
+
+              </div>
+              <div class="col-md-6 col-lg-5 col-lg-offset-1">
+                  <div class="row-about">
+                      <div class="col-sm-3">
+                          <h4>关于</h4>
+                          <ul class="list-unstyled">
+                              <li><a href="">关于我们</a></li>
+                              <li><a href="">广告合作</a></li>
+                              <li><a href="">友情链接</a></li>
+                              <li><a href="">招聘</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-3">
+                          <h4>联系方式</h4>
+                          <ul class="list-unstyled">
+                              <li><a href="">新浪微博</a></li>
+                              <li><a href="">电子邮件</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-4">
+                          <h4>旗下网站</h4>
+                          <ul class="list-unstyled">
+                              <li><a href="">laravel中文网</a></li>
+                              <li><a href="">Chost中国</a></li>
+                              <li><a href="">BootCDN</a></li>
+                              <li><a href="">Packagist中国镜像</a></li>
+                              <li><a href="">燃腾教育</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-2">
+                          <h4>赞助商</h4>
+                          <ul class="list-unstyled">
+                              <li><a href="">猫云</a></li>
+                              <li><a href="">京东云</a></li>
+                              <li><a href="">又拍云</a></li>
+                          </ul>
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+          <hr>
+          <div class="row footer-bottom">
+              <ul class="list-inline">
+                  <li>
+                      <a href="">京ICP备11008151号</a>
+                  </li>
+                  <li>京公网安备11010802014853</li>
+              </ul>
+
+          </div>
+
+      </div>
+  </footer>
+  <a id="scrollUp" href="#top" class="scroll">
+      <i class="fa fa-angle-up"></i>
+  </a>
+
+    <script src="./css/bootstrap-3.3.7-dist/js/jquery.js"></script>
+    <script src="./css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/lb.js"></script>
+    <script src="./js/dm.js"></script>
 </body>
 </html>

@@ -30,7 +30,7 @@ var oAudio = document.getElementById('audio'),
         deg = 0,//图片旋转角度
         duration,
         bgWidth = 232;
-        songs = ['./source/1.mp3','./source/2.mp3','./source/3.mp3'],
+        songs = ['./source/xul.mp3','./source/xux.mp3','./source/xue.mp3'],
         img = ['./img/1.jpg','./img/2.jpg','./img/3.jpg'],
         index = 0,
         newvol = 34,//开始播放音乐时，默认的音量大小是0.25
@@ -60,11 +60,6 @@ function init(){
 //音乐结束时，相当于下一首按钮(Btn3)按下，进行下一首歌播放
 oAudio.onended = function (){
     oBtn3.onclick();
-    // musicPause();
-    // oAudio.currentTime = 0;
-    // oCurrentTime.innerHTML = conversion(0);
-    // oProActive.style.width = 8 + 'px';
-    // musicPlay();
     }
 }
 function canplay(){
