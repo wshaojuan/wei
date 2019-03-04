@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>手机相册</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <ul class="img-box">
+        <li class="item"><img src="./img/1.jpg" alt=""></li>
+        <li class="item"><img src="./img/2.jpg" alt=""></li>
+        <li class="item"><img src="./img/3.jpg" alt=""></li>
+        <li class="item"><img src="./img/4.jpg" alt=""></li>
+        <li class="item"><img src="./img/5.jpg" alt=""></li>
+        <li class="item"><img src="./img/6.jpg" alt=""></li>
+        <li class="item"><img src="./img/7.jpg" alt=""></li>
+        <li class="item"><img src="./img/8.jpg" alt=""></li>
+    </ul>
+    <div class="wraper">
+        <ul class="list">
+            <li class="list-img"><img src="./img/1.jpg" alt=""></li>
+            <li class="list-img"><img src="./img/2.jpg" alt=""></li>
+            <li class="list-img"><img src="./img/3.jpg" alt=""></li>
+            <li class="list-img"><img src="./img/4.jpg" alt=""></li>
+            <li class="list-img"><img src="./img/5.jpg" alt=""></li>
+            <li class="list-img"><img src="./img/6.jpg" alt=""></li>
+            <li class="list-img"><img src="./img/7.jpg" alt=""></li>
+            <li class="list-img"><img src="./img/8.jpg" alt=""></li>
+        </ul>
+    </div>
+   
+
+    <script src="./js/zepto.js"></script>
+    <script src="./js/touch.js"></script>
+    <script src="./js/fx.js"></script>
+    <script>
+        //图片点击放大
+        $('.item').tap(function(){
+            var index = $(this).index();
+            $('.img-box').addClass("active");
+            $('.list').addClass("max");
+            $('.list').css('left', -index*$('.list-img').width());
+        })
+           
+        //放大的图片再次点击缩小，回到原来的大小
+        $('.list-img').tap(function(){
+            $('.img-box').removeClass("active");
+            $('.list').removeClass("max");
+        }).swipeLeft(function(){ //向左滑动，显示下一张图片
+            var index = $(this).index();
+            console.log(index);
+            if(index == 7){
+                index = -1;
+            }
+            $('.list').css('left', -(index + 1)*$('.list-img').width());
+        }).swipeRight(function(){ //向右滑动，显示上一张图片
+            var index = $(this).index();
+            if(index == 0){
+                index = 8;
+            }
+            // console.log(index);
+            $('.list').css('left', -(index - 1)*$('.list-img').width());
+        })
+
+        
+
+    </script>
+</body>
+</html>
