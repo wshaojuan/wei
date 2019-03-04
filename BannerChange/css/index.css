@@ -1,0 +1,77 @@
+body,ul, li,p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrapper {
+    position: relative;
+    width: 948px;
+    height: 260px;
+    margin: 0 auto;
+    border: 3px solid #000;
+}
+.list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.list label {
+    display: block;
+    padding-left: 20px;
+    width: 230px;
+    height: 65px;
+}
+.list .p {
+    display: inline-block;
+    margin-top: 12px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+.list .p img {
+    width: 100%;
+}
+.list .d {
+    display: inline-block;
+    margin-top: 12px;
+    vertical-align: top;
+}
+.list .d p {
+    color: #fff;
+}
+.list .d .des {
+    font-size: 12px;
+}
+.img-box img {
+    display: none;
+}
+input {
+    display: none;
+}
+/* 让被选中的元素显示出来 */
+#btn1:checked ~ .img-box img:nth-child(1) {
+    display: block;
+}
+#btn2:checked ~ .img-box img:nth-child(2) {
+    display: block;
+}
+#btn3:checked ~ .img-box img:nth-child(3) {
+    display: block;
+}
+#btn4:checked ~ .img-box img:nth-child(4) {
+    display: block;
+}
+/* 设置元素选中时候的背景 */
+#btn1:checked ~ .list label:nth-child(1) {
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.8), transparent);
+}
+#btn2:checked ~ .list label:nth-child(2) {
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.8), transparent);
+}
+#btn3:checked ~ .list label:nth-child(3) {
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.8), transparent);
+}
+#btn4:checked ~ .list label:nth-child(4) {
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.8), transparent);
+}
