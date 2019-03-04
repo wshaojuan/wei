@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>新闻</title>
+    <style>
+    body, ul, li, a{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+    .wrapper{
+        width: 600px;
+        margin: 0 auto;
+        background: #ccc;
+        font-size: 0;
+    }
+    .wrapper input {
+        display: none;
+    }
+    .title ul li {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .title ul li label{
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+    }
+    .main{
+        background: #f7f7f7;
+    }
+    .main ul {
+       padding: 20px 0;
+       display: none;
+    }
+    .main ul li {
+        margin: 10px 50px;
+    }
+    .main ul li a{
+        font-size: 14px;
+        color: #666;
+    }
+    
+    #hot:checked ~.main .hot-news,
+    #home:checked ~.main .home-news,
+    #international:checked ~.main .international-news{
+        display: block;
+    }
+    #hot:checked ~.title .hot,
+    #home:checked ~.title .home,
+    #international:checked ~.title .international{
+        background: #f7f7f7;
+    }  
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <input type="radio" id="hot" name="tab" checked>
+        <input type="radio" id="home" name="tab">
+        <input type="radio" id="international"name="tab" >
+
+        <nav class="title">
+           <ul>
+                <li class="hot">
+                    <label for="hot" >热门新闻</label>
+                </li> 
+                <li class="home">
+                    <label for="home">国内新闻</label>
+                </li>
+                <li class="international">
+                    <label for="international">国际新闻</label>
+                </li>
+           </ul>
+        </nav>
+        <div class="main">
+            <ul class="hot-news">
+                <li><a href="javascript:;">改革开放</a></li>
+                <li><a href="javascript:;">改革开放</a></li>
+                <li><a href="javascript:;">改革开放</a></li>
+                <li><a href="javascript:;">改革开放</a></li>
+            </ul>
+            <ul class="home-news">
+                <li><a href="javascript:;">13年前，宁波成为首批“全国文明城市”</a></li>
+                <li><a href="javascript:;">13年前，宁波成为首批“全国文明城市”</a></li>
+                <li><a href="javascript:;">13年前，宁波成为首批“全国文明城市”</a></li>
+                <li><a href="javascript:;">13年前，宁波成为首批“全国文明城市”</a></li>
+            </ul>
+            <ul class="international-news">
+                <li><a href="javascript:;">中新关系降至历史最低点？</a></li>
+                <li><a href="javascript:;">中新关系降至历史最低点？</a></li>
+                <li><a href="javascript:;">中新关系降至历史最低点？</a></li>
+                <li><a href="javascript:;">中新关系降至历史最低点？</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+</html>
