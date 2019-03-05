@@ -4,7 +4,8 @@ body{
     /* height: 15000px; */
 }
 .navbar{
-    background-color: #d8e5f1;
+    background-color: #badbf0;
+ 
    
 }
 #nav-shouye{
@@ -16,7 +17,11 @@ body{
 .jumbotron {
    margin: 50px 0;
     text-align: center;
+    background:
+                linear-gradient(to right,rgb(17, 206, 240),transparent 40%),
+                linear-gradient(to right, transparent 60%,rgb(12, 215, 241));
 }
+
 .project-header{
     text-align: center;
 }
@@ -145,7 +150,9 @@ hr {
     margin: 0  auto 100px;
     border: 2px solid #1597e2;
     overflow: hidden;
-    z-index: 10000;
+    /* z-index: 10000; */
+    /* transform: translateX(-200%);
+    transition: transform 2s; */
 }
 .lb-wrapper ul{
     margin: 0;
@@ -224,11 +231,14 @@ hr {
 
 /* 弹幕部分 */
 .dm-equipment {
+    /* display: none; */
     position: relative;
     width: 1075px;
     height: 594px;
     background-image: url('../imgs/bg.png');
     margin: 50px auto;
+    transform: translateX(100%);
+    transition: transform 3s;
 }
 .dm-wrapper {
     position: absolute;
