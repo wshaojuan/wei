@@ -98,7 +98,7 @@ body{
 .btn{
     position: absolute;
     display: inline-block;
-    width: 30px;
+    width: 51px;
     height: 30px;
     background: #ccc;
     cursor: pointer;

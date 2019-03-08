@@ -46,7 +46,7 @@ function timerFun(){
 //鼠标进入，停止自动轮播
 $('.wrapper').mouseover(function(){
     clearTimeout(timer);
-}) .mouseout(function(){
+}).mouseout(function(){
     timerFun();
 });
 
