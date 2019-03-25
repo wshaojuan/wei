@@ -1,0 +1,89 @@
+#scene{
+    width: 750px;
+    height: 550px;
+    background: url("../img/bg.png");
+    /* border: 1px solid black; */
+    position: relative;
+    cursor: none;
+    user-select: none; 
+}
+#chuizio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 1px solid black; */
+    margin-top:-40px;
+    margin-left: -40px;
+    cursor: none;
+    user-select: none;
+    z-index: 999;
+}
+div[id^="hollow"]{
+    /* border: 1px solid black; */
+    width:102px;
+    height: 103px;
+    position: absolute;
+    overflow: hidden;
+}
+#hollow1{
+    top: 150px;
+    left: 140px;
+}
+#hollow2{
+    top: 150px;
+    left: 330px;
+}
+#hollow3{
+    top: 150px;
+    left: 528px;
+}
+#hollow4{
+    top: 240px;
+    left: 116px;
+}
+#hollow5{
+    top: 240px;
+    left: 334px;
+}
+#hollow6{
+    top: 240px;
+    left: 532px;
+}
+#hollow7{
+    top: 336px;
+    left: 109px;
+}
+#hollow8{
+    top: 342px;
+    left: 333px;
+}
+#hollow9{
+    top: 342px;
+    left: 550px;
+}
+div[id^="hollow"] img{
+    position: absolute;
+    top: 103px;
+    left: 0px;
+}
+
+#score { 
+    position: absolute; 
+    left: 230px; 
+    top: 195px; 
+    width: 115px; 
+    height: 20px; 
+    text-align: center; 
+    /*border: 1px solid black;*/ 
+} 
+		 
+#countdown { 
+    position: absolute; 
+    left: 484px; 
+    top: 195px; 
+    width: 115px; 
+    height: 20px; 
+    text-align: center; 
+    /*border: 1px solid black;*/ 
+} 
+    
