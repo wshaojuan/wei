@@ -74,6 +74,17 @@
                         <li><a href="#">vue</a></li> -->
                         </ul>
                  </li>
+
+                  <!-- 第5个下拉 -->
+
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  游戏  <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a href="./MouseGame/index.html">打地鼠游戏</a></li>
+                    <!-- <li><a href="#">vue-音乐播放器</a></li>
+                    <li><a href="#">vue</a></li> -->
+                    </ul>
+                 </li>
             </ul>
             
             <ul class="nav navbar-nav navbar-right">
@@ -418,8 +429,37 @@
 
     </div>
 
-  <!-- 弹幕 -->
-  <div class="project-header page-header">
+    <!-- 游戏板块 -->
+    <div class="container projects">
+        <div class="project-header page-header">
+            <h3 id="item-list">游戏</h3>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <a href="./MouseGame/index.html" class="lazy">
+                        <img src="./imgs/mouse.jpg" alt="..." width="300px" height="150px">
+                    </a>
+                    <div class="caption">
+                        <h3>
+                            <a href="./MouseGame/index.html" title="React">打地鼠游戏
+                            <br><small>鼠随机的出现和定时消失</small></a>
+                        </h3>
+                        <p>游戏的关键是进行碰撞的检测，需要计算老鼠所在区域的位置，然后条件判断锤子是否在这个位置点击，从而确定老鼠的图片和得分。
+                            </p>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+   <!-- 弹幕 -->
+    <div class="project-header page-header">
         <h3 id="item-list">视频观看，欢迎发送弹幕！</h3>
     </div>
 
